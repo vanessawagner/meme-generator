@@ -1,6 +1,6 @@
-#Phase 1 Project Guidelines
+# Phase 1 Project Guidelines
 
-##Learning Goals
+## Learning Goals
 
 Design and architect features across a frontend
 Communicate and collaborate in a technical environment
@@ -8,7 +8,7 @@ Integrate JavaScript and an external API
 Debug issues in small- to medium-sized projects
 Build and iterate on a project MVP
 
-##Introduction
+## Introduction
 
 Welcome to JavaScript Project Mode!
 
@@ -16,7 +16,7 @@ You’ve worked so hard to get here and have learned a ton. Now it's time to bri
 
 For this project, you're going build a Single Page Application (SPA). Building this application will be challenging because it will integrate everything you've learned up to this point. Your frontend will be built with HTML, CSS, and JavaScript and will communicate with a public API.
 
-###Project Requirements
+### Project Requirements
 
 Your app must be a HTML/CSS/JS frontend that accesses data from a public API. All interactions between the client and the API should be handled asynchronously and use JSON as the communication format. Try to avoid using an API that requires a key. APIs that are free and require no authorization will be easiest to use. For ideas, see this list of no-auth APIs. If you would like to use an API that requires a key, please consult with your instructor on how to protect that key. NEVER push your API key to github!
 
@@ -28,12 +28,12 @@ Your project must implement at least one instance of array iteration using avail
 
 Follow good coding practices. Keep your code DRY (Do not repeat yourself) by utilizing functions to abstract repetitive code.
 
-###Stretch Goals
+### Stretch Goals
 Use json-server in your project to persist your app's interactivity.
 
-##Strategy, Timeline, and Tips
+## Strategy, Timeline, and Tips
 
-###Planning
+### Planning
 
 Plan out your features
 Develop user stories
@@ -41,7 +41,7 @@ Develop user stories
 Features should not need you there to explain them to users
 Plan out the structure of your JSON requests
 
-###Project Pitches
+### Project Pitches
 
 Before you start working on your project, you'll pitch your project idea to your instructors for approval and feedback.
 
@@ -54,11 +54,11 @@ Challenges you expect to face
 How you are meeting the requirements of the project
 Feel free to send this pitch to your instructor via slack asynchronously.
 
-###MVP ASAP
+### MVP ASAP
 Build a Minimum Viable Product (MVP) as quickly as possible.
 Pick an API and explore it early on to ensure it will work for your need
 
-###Instructor Guidance
+### Instructor Guidance
 You should strive to solve problems independently, but you also shouldn't waste your time stuck on a problem. A good guideline for a small bug is the rule of 10s:
 
 10 minutes debugging the code
@@ -67,7 +67,7 @@ You should strive to solve problems independently, but you also shouldn't waste 
 Asking an instructor
 If you seek out instructor guidance on your design from the start, they might help steer you into design and architectural decisions that will help you down the road. That will also give the instructors context for what your app is supposed to do, so you won't need to explain everything to them when asking for help debugging.
 
-###Guidelines for Staying Organized
+### Guidelines for Staying Organized
 Write down the decisions you make about your project. This will not only help you think more clearly, it will also help you communicate your project to instructors when asking for help. In addition to writing everything down, we also recommend the following to help stay organized and on track:
 
 Describe/sketch your ideas (use diagrams!).
@@ -77,7 +77,7 @@ Then, continue to build additional async code and frontend features.
 Continue building features one by one.
 Check in with your instructors to make sure your scope and timeline are manageable.
 
-###JSON Server Instructions
+### JSON Server Instructions
 Note: Using json-server is a stretch goal, so make sure you have a working MVP before trying to set up json-server!
 
 You can use this json-server template to generate your backend code. Using this template will make it easier to deploy your backend later on.
@@ -112,7 +112,7 @@ PATCH /toys/:id
 DELETE /toys/:id
 You can consult the json-server docs for more information.
 
-#Resources
+## Resources
 Public APIs
 Fun APIs
 json-server
