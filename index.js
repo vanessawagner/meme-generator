@@ -1,41 +1,41 @@
+
+
 const api_url = 'https://api.imgflip.com/get_memes'
     async function getMEME() {
         const response = await fetch(api_url);
         const data = await response.json();
-     
+        console.log(data)
+
+        var increment = document.getElementById('increment')
+        var decrement = document.getElementById('decrement')
+       
+
+        var i = 0;
+        memeCurrent = data.data.memes[i]
+        image.src = memeCurrent.url
+
+        increment.addEventListener('click', function() {
+            i++
+            console.log(i)
+            console.log(data.data.memes[i])
+            memeCurrent = data.data.memes[i]
+            image.src = memeCurrent.url
         
-            //number of memes available in JSON
-            memeLength = data.data.memes.length;
-            console.log(memeLength)
-
-    console.log(data.data.memes[0])
+        })
         
-    //function to get random meme from array
-    function getRandomMeme(data) {
-        //get random index value
-        const randomIndex = Math.floor(Math.random()*memeLength)
-        //get random item
-        const item = data.data.memes[randomIndex];
-        return item;
+        decrement.addEventListener('click', function() {
+            i--
+            console.log(i)
+            console.log(data.data.memes[i])
+            memeCurrent = data.data.memes[i]
+            image.src = memeCurrent.url
+
+
+    })
+   
+    console.log(i)
+    
     }
-    const randomMeme = getRandomMeme(data)
-    
-    
-    //grab the url of the randomMeme generated
-    randomMemeUrl = randomMeme.url
-    randomMemeTitle = randomMeme.title
-
-    //connect randomMemeUrl java to HTML page so img can appear
-    var image = document.getElementById("image")
-
-    image.src = randomMemeUrl
-    image.title = randomMemeTitle
-
-    }
-
-    getMEME();  
-
+    getMEME();
 
     
-
-
