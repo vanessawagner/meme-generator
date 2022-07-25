@@ -13,38 +13,56 @@
         <h1>Meme Fun</h1>
         <h2>Popular Meme Images to Inspire Your Next Creation</h2>
     </div>
+
     <div id="content">
-        
+
+
 
 
         <button id="decrement">previous</button>
         <button id="increment">next</button>
-        
-          
+        <p>
+
+        </p>
+
         
       </div>
 
-      <input type = "text" id="memetext" placeholder="Enter Meme Text" maxlength ="10">
+      <input type = "text" id="memetext" placeholder="Enter Meme Text" maxlength ="100">
       <button id="enterButton">Add Entered Text</button>
       <p class = "output" id="output1"></p>      
 
 
-      <img src="" id="image" width="300px">
-      
-      <script>
-            var txt = document.getElementById('memetext')
-            var enterButton = document.getElementById('enterButton')
-            var out1 = document.getElementById('output1')
 
-            function addTextToMeme() {
-            out1.innerHTML = txt.value;
+
+    <div class = "image">
+        <img src="" id="image" width="300px">
+         
         
-            }
-            enterButton.addEventListener('click', addTextToMeme);
-      </script>
+      
+        <div class="overlay">
+            <script>
+                var txt = document.getElementById('memetext')
+                var enterButton = document.getElementById('enterButton')
+                var out1 = document.getElementById('output1')
 
-      </div>
-    
+                function addTextToMeme() {
+                out1.innerHTML = txt.value;
+            
+                }
+                enterButton.addEventListener('click', addTextToMeme);
+                
+            </script>
+        </div>
+        <input
+            autocomplete="off"
+            type="search"
+            id="search"
+            placeholder="Search memes..."
+        />
+        <ul id="results"></ul>
+        </div>
+      
 
 </body>
 </html> 
