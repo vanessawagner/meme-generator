@@ -32,10 +32,10 @@ const api_url = 'https://api.imgflip.com/get_memes'
 
 
     })
-   
-    console.log(i)
-    
-    }
+
+        
+
+}
+
     getMEME();
 
-    
