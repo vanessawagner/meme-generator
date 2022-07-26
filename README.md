@@ -2,7 +2,7 @@
 The Meme Generator is a single-page app that allows the user to customize their own meme.
 
 ## Project Purpose and Features
-This app was created as a quick way to fetch popular meme images from the imgflip API, customize with their own text, and quickly search for an image URL. 
+This app is a Single Page Application that creates a quick way to fetch popular meme images from the imgflip API, customize with their own text, and quickly search for an image URL. 
 
 ## How-To Guide
 1. Start by navigating forward or backward through the images available in the ImgFlip API using the dedicated Next and Previous buttons. 
@@ -16,6 +16,7 @@ This app was created as a quick way to fetch popular meme images from the imgfli
 
 ## Sources and Technologies
 Imgflip API: https://api.imgflip.com/get_memes
+
 Vanilla JavaScript
+
 JSON server
-Note: This app is an SPA (single page application)
