@@ -3,7 +3,9 @@ The Meme Generator is a single-page app that allows the user to fetch popular me
 
 ## Display
 The application can be accessed from your browser. 
-![](media/App%Preview.PNG)
+
+<img src="media/App Preview.PNG" width="800">
+
 
 ## Sources
 Imgflip API: https://api.imgflip.com/get_memes
