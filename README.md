@@ -14,5 +14,8 @@ This app was created as a quick way to fetch popular meme images from the imgfli
 3. If you are looking for a particular meme and its associated url, you can filter through the API by entering text in the "search memes.." field.
 <img src="media/MemeSearch.gif" width="800">
 
-## Sources
+## Sources and Technologies
 Imgflip API: https://api.imgflip.com/get_memes
+Vanilla JavaScript
+JSON server
+Note: This app is an SPA (single page application)
