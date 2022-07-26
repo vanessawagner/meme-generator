@@ -15,31 +15,17 @@
     </div>
 
     <div id="content">
-
-
-
-
         <button id="decrement">previous</button>
         <button id="increment">next</button>
-        <p>
-
-        </p>
-
-        
-      </div>
+        <p>        </p>
+    </div>
 
       <input type = "text" id="memetext" placeholder="Enter Meme Text" maxlength ="100">
       <button id="enterButton">Add Entered Text</button>
       <p class = "output" id="output1"></p>      
 
-
-
-
     <div class = "image">
         <img src="" id="image" width="300px">
-         
-        
-      
         <div class="overlay">
             <script>
                 var txt = document.getElementById('memetext')
@@ -48,10 +34,8 @@
 
                 function addTextToMeme() {
                 out1.innerHTML = txt.value;
-            
                 }
-                enterButton.addEventListener('click', addTextToMeme);
-                
+                enterButton.addEventListener('click', addTextToMeme);  
             </script>
         </div>
         <input
@@ -62,7 +46,5 @@
         />
         <ul id="results"></ul>
         </div>
-      
-
 </body>
 </html> 
