@@ -33,7 +33,7 @@ h1, h2 {
  
  .output {
     position: absolute;
-    top: 38%;
+    top: 29%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: rgb(255, 255, 255);
