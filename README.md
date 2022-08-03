@@ -14,6 +14,9 @@ This app is a Single Page Application that creates a quick way to fetch popular 
 3. If you are looking for a particular meme and its associated url, you can filter through the API by entering text in the "search memes.." field.
 <img src="media/MemeSearch.gif" width="800">
 
+## Video Walk Through
+To view a guide on how this app is used, you can follow along at this link: https://youtu.be/IwqfCEFt1cE
+
 ## Blog Reference
 I created a blog post with a guide on how to fetch the API data as well as create the next and previous buttons here: https://vanessawagner.github.io/APIs-and-Javascript/
 
