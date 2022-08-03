@@ -11,13 +11,14 @@ const api_url = 'https://api.imgflip.com/get_memes'
         let decrement = document.getElementById('decrement')
        
         //displaying first image in array upon start up of the app
-        let i = 0;
+        let i=0
         
         memeCurrent = data.data.memes[i]
         image.src = memeCurrent.url
 
         //next button on HTML moves forwards through array by returning and then incrementing
         increment.addEventListener('click', function() {
+            
             i++
             memeCurrent = data.data.memes[i]
             image.src = memeCurrent.url
@@ -25,10 +26,16 @@ const api_url = 'https://api.imgflip.com/get_memes'
         
         //previous button on HTML moves backwards through array by returning and then incrementing
         decrement.addEventListener('click', function() {
+          console.log(i)
+          if(i<1){
+            memeCurrent = data.data.memes[0]
+            image.src = memeCurrent.url
+          }else {
             i--
             memeCurrent = data.data.memes[i]
             image.src = memeCurrent.url
-        })
+          }}          
+        )
 
         //search and filter functionality
         const search = document.getElementById("search");
