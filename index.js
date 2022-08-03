@@ -2,35 +2,34 @@
 
 const api_url = 'https://api.imgflip.com/get_memes'
     async function getMEME() {
+      //fetch API Data and store data in response variable
         const response = await fetch(api_url);
+        //store the response in an array format called data
         const data = await response.json();
-        console.log(data)
+
 
         var increment = document.getElementById('increment')
         var decrement = document.getElementById('decrement')
        
-
+        //displaying first image in array upon start up of the app
         var i = 0;
         memeCurrent = data.data.memes[i]
         image.src = memeCurrent.url
 
+        //next button on HTML moves forwards through array by returning and then incrementing
         increment.addEventListener('click', function() {
             i++
-            console.log(i)
-            console.log(data.data.memes[i])
             memeCurrent = data.data.memes[i]
             image.src = memeCurrent.url
             
         
         })
         
+        //previous button on HTML moves backwards through array by returning and then incrementing
         decrement.addEventListener('click', function() {
             i--
-            console.log(i)
-            console.log(data.data.memes[i])
             memeCurrent = data.data.memes[i]
             image.src = memeCurrent.url
-            console.log(memeCurrent.name)
             title = memeCurrent.name
     })
 
@@ -40,7 +39,7 @@ const api_url = 'https://api.imgflip.com/get_memes'
     //define input in search field
     let search_term = "";
     
-    
+    //search and filter functionality
     const listMemes = () => {
     //clear list
       results.innerHTML = "";
@@ -67,7 +66,7 @@ const api_url = 'https://api.imgflip.com/get_memes'
     });
 }
 
-
+    //call function to display array of data
     getMEME();
 
     
