@@ -18,15 +18,17 @@ const api_url = 'https://api.imgflip.com/get_memes'
 
         //next button on HTML moves forwards through array by returning and then incrementing
         increment.addEventListener('click', function() {
-            
+          if(i>98){
+            memeCurrent = data.data.memes[99]
+            image.src = memeCurrent.url
+          }  else {
             i++
             memeCurrent = data.data.memes[i]
             image.src = memeCurrent.url
-        })
+        }})
         
         //previous button on HTML moves backwards through array by returning and then incrementing
         decrement.addEventListener('click', function() {
-          console.log(i)
           if(i<1){
             memeCurrent = data.data.memes[0]
             image.src = memeCurrent.url
