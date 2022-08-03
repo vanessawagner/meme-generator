@@ -12,6 +12,7 @@ const api_url = 'https://api.imgflip.com/get_memes'
        
         //displaying first image in array upon start up of the app
         let i = 0;
+        
         memeCurrent = data.data.memes[i]
         image.src = memeCurrent.url
 
@@ -39,7 +40,7 @@ const api_url = 'https://api.imgflip.com/get_memes'
         const listMemes = () => {
           //clear list
           results.innerHTML = "";
-          //loop over data elements to filter if meme NAME matches search text
+          //array iteration to loop over data elements to filter if meme NAME matches search text 
           data.data.memes.filter((item) => {
             return (
               item.name.toLowerCase().includes(search_term) 
