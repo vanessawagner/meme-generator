@@ -30,7 +30,7 @@ const api_url = 'https://api.imgflip.com/get_memes'
         }})
         
         //previous button on HTML moves backwards through array by returning and then incrementing
-        decrement.addEventListener('dlbclick', function() {
+        decrement.addEventListener('dblclick', function() {
           if(i<1){
             memeCurrent = data.data.memes[0]
             image.src = memeCurrent.url
