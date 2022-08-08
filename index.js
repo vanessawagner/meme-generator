@@ -1,11 +1,13 @@
 
 
 const api_url = 'https://api.imgflip.com/get_memes'
+
     async function getMEME() {
         //fetch API Data and store data in response variable
         const response = await fetch(api_url);
         //store the response in an array format called data
         const data = await response.json();
+        console.log('word')
 
         let increment = document.getElementById('increment')
         let decrement = document.getElementById('decrement')
@@ -28,7 +30,7 @@ const api_url = 'https://api.imgflip.com/get_memes'
         }})
         
         //previous button on HTML moves backwards through array by returning and then incrementing
-        decrement.addEventListener('click', function() {
+        decrement.addEventListener('dlbclick', function() {
           if(i<1){
             memeCurrent = data.data.memes[0]
             image.src = memeCurrent.url
@@ -36,9 +38,10 @@ const api_url = 'https://api.imgflip.com/get_memes'
             i--
             memeCurrent = data.data.memes[i]
             image.src = memeCurrent.url
+            
           }}          
         )
-
+        
         //search and filter functionality
         const search = document.getElementById("search");
         const results = document.getElementById("results");
@@ -66,14 +69,18 @@ const api_url = 'https://api.imgflip.com/get_memes'
         listMemes();
 
         //capture the search input
-        search.addEventListener("input", (event) => {
-          search_term = event.target.value.toLowerCase();
-          listMemes();
-        });
-    }
+         search.addEventListener("input", example
+        );
 
+         function example (event) {
+          search_term = event.target.value.toLowerCase();
+
+          listMemes();
+        }
+    }
+  
     //call function to display array of data
     getMEME();
 
-    
+    console.log('words')
     
